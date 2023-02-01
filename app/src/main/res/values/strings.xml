@@ -3,4 +3,6 @@
     <string name="story">Story Book</string>
     <string name="quiz">Quiz</string>
     <string name="vocab">Vocabulary</string>
+    <string name="homeTitle1">What do you want</string>
+    <string name="homeTitle2">to learn?</string>
 </resources>
