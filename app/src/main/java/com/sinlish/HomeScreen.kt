@@ -3,16 +3,16 @@ package com.sinlish
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.cardview.widget.CardView
+import android.widget.ImageView
 import com.sinlish.menus.QuizScreen
 import com.sinlish.menus.StoryScreen
 import com.sinlish.menus.VocabScreen
 
 class HomeScreen : AppCompatActivity() {
 
-    private lateinit var quiz: CardView
-    private lateinit var story: CardView
-    private lateinit var vocab: CardView
+    private lateinit var quiz: ImageView
+    private lateinit var story: ImageView
+    private lateinit var vocab: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
