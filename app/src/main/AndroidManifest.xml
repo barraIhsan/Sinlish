@@ -12,6 +12,15 @@
         android:theme="@style/Theme.Sinlish"
         tools:targetApi="31">
         <activity
+            android:name=".menus.VocabScreen"
+            android:exported="false" />
+        <activity
+            android:name=".menus.StoryScreen"
+            android:exported="false" />
+        <activity
+            android:name=".menus.QuizScreen"
+            android:exported="false" />
+        <activity
             android:name=".HomeScreen"
             android:exported="false" />
         <activity
