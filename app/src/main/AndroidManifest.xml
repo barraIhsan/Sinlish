@@ -12,13 +12,22 @@
         android:theme="@style/Theme.Sinlish"
         tools:targetApi="31">
         <activity
-            android:name=".menus.VocabScreen"
+            android:name=".menus.vocab.VocabScreen"
             android:exported="false" />
         <activity
-            android:name=".menus.StoryScreen"
+            android:name=".menus.story.StoryScreen"
             android:exported="false" />
         <activity
-            android:name=".menus.QuizScreen"
+            android:name=".menus.quiz.QuizScreen"
+            android:exported="false" />
+        <activity
+            android:name=".menus.vocab.VocabMenuScreen"
+            android:exported="false" />
+        <activity
+            android:name=".menus.story.StoryMenuScreen"
+            android:exported="false" />
+        <activity
+            android:name=".menus.quiz.QuizMenuScreen"
             android:exported="false" />
         <activity
             android:name=".HomeScreen"
