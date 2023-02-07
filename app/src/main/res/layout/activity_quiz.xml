@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
         android:fontFamily="@font/nunito_black"
-        android:text="Quiz"
+        android:text="@string/quiz"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#FFFFFF"
