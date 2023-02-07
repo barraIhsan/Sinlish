@@ -21,6 +21,15 @@
             android:name=".menus.quiz.QuizScreen"
             android:exported="false" />
         <activity
+            android:name=".menus.vocab.VocabMenuScreen"
+            android:exported="false" />
+        <activity
+            android:name=".menus.story.StoryMenuScreen"
+            android:exported="false" />
+        <activity
+            android:name=".menus.quiz.QuizMenuScreen"
+            android:exported="false" />
+        <activity
             android:name=".HomeScreen"
             android:exported="false" />
         <activity
