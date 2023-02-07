@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import com.sinlish.menus.quiz.QuizMenuScreen
+import com.sinlish.menus.story.StoryMenuScreen
 import com.sinlish.menus.vocab.VocabMenuScreen
 
 class HomeScreen : AppCompatActivity() {
@@ -20,8 +22,8 @@ class HomeScreen : AppCompatActivity() {
         story = findViewById(R.id.story)
         vocab = findViewById(R.id.vocab)
 
-        quiz.setOnClickListener { startActivity(Intent(this, VocabMenuScreen::class.java)) }
-        story.setOnClickListener { startActivity(Intent(this, VocabMenuScreen::class.java)) }
+        quiz.setOnClickListener { startActivity(Intent(this, QuizMenuScreen::class.java)) }
+        story.setOnClickListener { startActivity(Intent(this, StoryMenuScreen::class.java)) }
         vocab.setOnClickListener { startActivity(Intent(this, VocabMenuScreen::class.java)) }
 
     }
