@@ -1,12 +1,12 @@
-package com.sinlish.menus
+package com.sinlish.menus.story
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.sinlish.R
 
-class VocabScreen : AppCompatActivity() {
+class StoryScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_vocab)
+        setContentView(R.layout.activity_story)
     }
 }

@@ -4,9 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import com.sinlish.menus.QuizScreen
-import com.sinlish.menus.StoryScreen
-import com.sinlish.menus.VocabScreen
+import com.sinlish.menus.quiz.QuizScreen
+import com.sinlish.menus.story.StoryScreen
+import com.sinlish.menus.vocab.VocabScreen
 
 class HomeScreen : AppCompatActivity() {
 
