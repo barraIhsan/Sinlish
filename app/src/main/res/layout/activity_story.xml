@@ -51,7 +51,7 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="209dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
