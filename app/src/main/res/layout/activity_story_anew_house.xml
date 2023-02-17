@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/yellow"
-    tools:context=".menus.story.StoryScreen">
+    tools:context=".menus.story.StoryANewHouse">
 
     <ImageView
         android:id="@+id/imageView18"
@@ -23,7 +23,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunito_black"
         android:lineHeight="80dp"
-        android:text="A Glass Envelope"
+        android:text="A New
+        House"
         android:textAlignment="center"
         android:textSize="55.79dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,13 +34,16 @@
 
     <ImageView
         android:id="@+id/imageView24"
-        android:layout_width="636dp"
+        android:layout_width="436dp"
         android:layout_height="640dp"
-        app:srcCompat="@drawable/asset_envolope"
-        tools:layout_editor_absoluteX="-98dp"
-        tools:layout_editor_absoluteY="324dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/asset_a_new_house"
+        tools:layout_editor_absoluteY="394dp" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="295dp"
         android:layout_height="360dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,11 +60,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter_medium"
-                android:text="@string/a_glass_envelope"
+                android:text="@string/a_new_house"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="30sp" />
         </LinearLayout>
     </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

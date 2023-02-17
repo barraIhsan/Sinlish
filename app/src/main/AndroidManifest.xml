@@ -12,6 +12,12 @@
         android:theme="@style/Theme.Sinlish"
         tools:targetApi="31">
         <activity
+            android:name=".StoryWetNight"
+            android:exported="false" />
+        <activity
+            android:name=".Story_A_New_House"
+            android:exported="false" />
+        <activity
             android:name=".menus.vocab.VocabScreen"
             android:exported="false" />
         <activity
