@@ -14,4 +14,6 @@
     <color name="teal">#FF50d7be</color>
     <color name="darkblue">#2174C1</color>
     <color name="brown">#ACABB4</color>
+    <color name="correct">#79ea33</color>
+    <color name="wrong">#ea3333</color>
 </resources>

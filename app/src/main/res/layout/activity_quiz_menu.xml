@@ -39,13 +39,14 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5">
 
         <GridLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:columnCount="3"
             android:rowCount="1">
 
             <ImageView
+                android:id="@+id/quiz_fruit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
@@ -58,6 +59,7 @@
                 app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
             <ImageView
+                android:id="@+id/quiz_food"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="50dp"
@@ -68,6 +70,7 @@
                 app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
             <ImageView
+                android:id="@+id/quiz_animal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="50dp"
