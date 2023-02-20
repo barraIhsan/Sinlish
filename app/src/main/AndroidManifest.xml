@@ -15,20 +15,31 @@
             android:name=".menus.quiz.QuizResultScreen"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Sinlish.Story"/>
+            android:theme="@style/Theme.Sinlish.Quiz" />
         <activity
             android:name=".menus.vocab.VocabScreen"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".menus.story.StoryScreen"
+            android:name=".menus.story.StoryANewHouse"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sinlish.Story"/>
+        <activity
+            android:name=".menus.story.StoryEnvelopeScreen"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sinlish.Story"/>
+        <activity
+            android:name=".menus.story.StoryWetNight"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sinlish.Story"/>
         <activity
             android:name=".menus.quiz.QuizScreen"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Sinlish.Quiz"/>
+            android:theme="@style/Theme.Sinlish.Quiz" />
         <activity
             android:name=".menus.vocab.VocabMenuScreen"
             android:exported="false"

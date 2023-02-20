@@ -16,7 +16,7 @@ class QuizScreen : AppCompatActivity(), View.OnClickListener {
     private var mQuestionsList: ArrayList<QuizModel>? = null
     private var mSelectedOptionPosition: Int = 0
     private var mCorrectAnswers: Int = 0
-    private var theme: String = ""
+    private var theme: String = "theme"
     private var buttonDisabled: Boolean = false
 
     lateinit var questionIndex: TextView
@@ -33,15 +33,17 @@ class QuizScreen : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
+        mCorrectAnswers = 0
+
         questionText = findViewById(R.id.question)
-        progressBar = findViewById(R.id.progressBar)
+        progressBar = findViewById(R.id.questionProgressBar)
         questionIndex = findViewById(R.id.questionIndex)
         questionImage = findViewById(R.id.questionImage)
         option1 = findViewById(R.id.option1Text)
         option2 = findViewById(R.id.option2Text)
         option3 = findViewById(R.id.option3Text)
         option4 = findViewById(R.id.option4Text)
-        btnSubmit = findViewById(R.id.btn_submit)
+        btnSubmit = findViewById(R.id.questionSubmit)
         theme = intent.getStringExtra(QuizData.QUIZ_THEME).toString()
 
 
@@ -69,7 +71,8 @@ class QuizScreen : AppCompatActivity(), View.OnClickListener {
         }
 
         progressBar.progress = mCurrentPosition
-        questionIndex.text = "Question " + "$mCurrentPosition" + " of " + progressBar.max
+        progressBar.max = mQuestionsList!!.size
+        questionIndex.text = "Question $mCurrentPosition of ${progressBar.max}"
 
         questionText.text = question!!.question
         questionImage.setImageResource(question.image)
@@ -93,7 +96,7 @@ class QuizScreen : AppCompatActivity(), View.OnClickListener {
             option.typeface = Typeface.DEFAULT
             option.background = ContextCompat.getDrawable(
                 this,
-                R.drawable.default_button_quiz
+                R.drawable.button_round
             )
         }
 
@@ -121,20 +124,23 @@ class QuizScreen : AppCompatActivity(), View.OnClickListener {
                     selectedOptionView(option4, 4)
                 }
             }
-            R.id.btn_submit -> {
+            R.id.questionSubmit -> {
                 if (mSelectedOptionPosition == 0) {
-                    mCurrentPosition++
 
-                    when {
-                        mCurrentPosition <= mQuestionsList!!.size -> {
-                            setQuestion()
-                        }
-                        else -> {
-                            val intent = Intent(this, QuizResultScreen::class.java)
-                            intent.putExtra(QuizData.QUIZ_CORRECT, mCorrectAnswers)
-                            intent.putExtra(QuizData.QUIZ_TOTAL, mQuestionsList!!.size)
-                            startActivity(intent)
-                            finish()
+                    if (btnSubmit.text != "SUBMIT") {
+                        mCurrentPosition++
+
+                        when {
+                            mCurrentPosition <= mQuestionsList!!.size -> {
+                                setQuestion()
+                            }
+                            else -> {
+                                val intent = Intent(this, QuizResultScreen::class.java)
+                                intent.putExtra(QuizData.QUIZ_CORRECT, mCorrectAnswers)
+                                intent.putExtra(QuizData.QUIZ_TOTAL, mQuestionsList!!.size)
+                                startActivity(intent)
+                                finish()
+                            }
                         }
                     }
                 } else {
@@ -144,7 +150,7 @@ class QuizScreen : AppCompatActivity(), View.OnClickListener {
                     } else {
                         mCorrectAnswers++
                     }
-                    answerView(question.answer, R.drawable.correct_button_quiz)
+                    answerView(question.answer, R.drawable.quiz_correct)
                     buttonDisabled = true
 
                     if (mCurrentPosition == mQuestionsList!!.size) {

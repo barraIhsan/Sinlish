@@ -11,10 +11,10 @@
         android:id="@+id/imageView5"
         android:layout_width="362dp"
         android:layout_height="246dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:src="@drawable/story_header"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,32 +45,35 @@
             android:rowCount="1">
 
             <ImageView
+                android:id="@+id/story_envelope"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
                 android:layout_column="0"
                 android:layout_margin="50dp"
-                android:src="@drawable/story_envelope"
+                android:src="@drawable/story_envelope_card"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                 app:layout_constraintEnd_toEndOf="@+id/imageView6"
                 app:layout_constraintStart_toStartOf="@+id/imageView6"
                 app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
             <ImageView
+                android:id="@+id/story_house"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="50dp"
-                android:src="@drawable/story_newhouse"
+                android:src="@drawable/story_house_card"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                 app:layout_constraintEnd_toEndOf="@+id/imageView6"
                 app:layout_constraintStart_toStartOf="@+id/imageView6"
                 app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
             <ImageView
+                android:id="@+id/story_wetnight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="50dp"
-                android:src="@drawable/story_wetnight"
+                android:src="@drawable/story_wetnight_card"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                 app:layout_constraintEnd_toEndOf="@+id/imageView6"
                 app:layout_constraintStart_toStartOf="@+id/imageView6"

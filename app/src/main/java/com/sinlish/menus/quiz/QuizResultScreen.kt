@@ -3,6 +3,7 @@ package com.sinlish.menus.quiz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import com.sinlish.R
@@ -20,7 +21,8 @@ class QuizResultScreen : AppCompatActivity() {
         finishButton = findViewById(R.id.finishButton)
 
         val totalQuestion = intent.getIntExtra(QuizData.QUIZ_TOTAL, 0)
-        val correctAnswer = intent.getIntExtra(QuizData.QUIZ_CORRECT, 0)
+        val correctAnswer = intent.getIntExtra(QuizData.QUIZ_CORRECT,0)
+        Log.d("Nerima data", correctAnswer.toString())
 
         scoreText.text = "Your Score is $correctAnswer out of $totalQuestion"
         finishButton.setOnClickListener{

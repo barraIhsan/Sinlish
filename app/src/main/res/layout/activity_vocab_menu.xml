@@ -46,6 +46,7 @@
             android:rowCount="1">
 
             <ImageView
+                android:id="@+id/vocab_fruit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
@@ -58,6 +59,7 @@
                 app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
             <ImageView
+                android:id="@+id/vocab_food"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="50dp"
@@ -68,6 +70,7 @@
                 app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
             <ImageView
+                android:id="@+id/vocab_animal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="50dp"
